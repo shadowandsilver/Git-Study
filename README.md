@@ -1,12 +1,12 @@
 # Git-Study
-1.分布式版本控制系统
+1. 分布式版本控制系统
   优点：使用简单
   缺点：中央服务器出现故障，所有人无法工作
   
-2.集中式版本控制系统
+2. 集中式版本控制系统
   优点：每台服务器都有完整的项目
 
-3.安装
+3. 安装
 git config --global user.name "abc"
 git config --global user.email 123@com
 
@@ -66,7 +66,7 @@ git clone
 git clone https://github.com/shadowandsilver/Git-Study.git
 
 
-4.分区
+4. 分区
 工作区 Working Directory
 暂存区 Staging Area/Index
 本地仓库 Local Repository
@@ -80,7 +80,7 @@ git commit 暂存区的数据提交到本地仓库
 已修改 Modified
 已暂存 Staged
 
-5.添加和提交文件
+5. 添加和提交文件
 git status 查看仓库的状态
 git add 添加到暂存区
 git commit 提交
@@ -111,7 +111,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 —————————————————————————————————
 
-git add file1.txt 添加文件
+git add file1.txt 添加文件 （提交到暂存区中）
 
 $ git status
 结果
@@ -124,6 +124,46 @@ Changes to be committed:
         new file:   file1.txt （在仓后中后，变为绿色）
 
 —————————————————————————————————
+
+需要使用 -m 指定提交的信息
+git commit -m 
+
+exa: git commit -m "第一次提交"
+
+结果：
+[master (root-commit) a8152fa] 第一次提交
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file1.txt
+
+git add *.txt 添加所有文件至暂存区中
+
+git log 查看提交记录
+
+ 6. git reset 回退版本
+git rest --soft 回退到某一版本，保留工作区所有修改的内容
+git rest --hard 回退到某一版本，并且删除工作区和暂存区中的所有内容
+git rest --mixed 回退到某一版本，保留工作区的内容，丢弃暂存区中的内容
+
+实例：
+git rest --soft 版本ID
+
+exa: git rest --soft -0500
+
+7. git diff 查看版本和文件的差异
+git diff
+查看工作区和暂存区的内容是否相同
+
+ git diff HEAD
+ 产看工作区和版本库之间的差异
+
+git diff --cache
+git diff HEAD 比较暂存区和工作区
+
+
+
+
+
+
 
 
 
