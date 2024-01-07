@@ -12,6 +12,23 @@ git config --global credential.helper store
 查看git的配置信息
 git config --global --list
 
+4.创建仓库
+方式一：git init
+方式二： git clone
+
+方式一：
+创建仓库，名字是learn-git
+mkdir learn-git
+
+进入这个仓库
+cd learn-git
+
+初始化仓库
+git init
+
+
+
+
 
 
 
