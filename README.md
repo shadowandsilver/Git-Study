@@ -28,6 +28,7 @@ git init
 结果：Initialized empty Git repository in C:/Users/Owner/learn-git/.git/
 
 —————————————————————————————————
+
 注：.git 目录存放了Git仓库的所有数据
 需要使用 ls -a 指令
 结果：./  ../  .git/
@@ -50,6 +51,7 @@ drwxr-xr-x 1 Owner 197121   0 Jan  7 00:41 ./
 不要随意删除 （\rm -rf .git） 删除后仓库会变成普通文件夹
 
 —————————————————————————————————
+
 git init my-repo 直接创建名为 my-repo 的仓库
 结果：Initialized empty Git repository in C:/Users/Owner/learn-git/.git/my-repo/.git/
 
@@ -80,6 +82,7 @@ git add 添加到暂存区
 git commit 提交
 
 —————————————————————————————————
+
 git status
 结果：
 On branch master
@@ -89,6 +92,7 @@ No commits yet
 nothing to commit (create/copy files and use "git add" to track)
 
 —————————————————————————————————
+
 $ git status
 结果
 On branch master
@@ -102,6 +106,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 
 —————————————————————————————————
+
 git add file1.txt 添加文件
 
 $ git status
@@ -115,6 +120,7 @@ Changes to be committed:
         new file:   file1.txt （在仓后中后，变为绿色）
 
 —————————————————————————————————
+
 
 
 
