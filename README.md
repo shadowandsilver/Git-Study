@@ -159,6 +159,24 @@ git diff
 git diff --cache
 git diff HEAD 比较暂存区和工作区
 
+git diff 5af90b8 b270efb （版本号1 版本号2）
+比较两个版本的差异
+
+git diff 5af90b8 HEAD
+某个版本与HEAD进行比较
+
+git diff HEAD~ HEAD
+上个版本与当前版本进行比较
+
+git diff HEAD~2 HEAD
+与上两个版本进行比较
+
+git diff HEAD`2 HEAD file3.txxt
+只比较两个版本中的file3文件的差异
+
+
+
+
 
 
 
