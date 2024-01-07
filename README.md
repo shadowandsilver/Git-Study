@@ -53,6 +53,13 @@ drwxr-xr-x 1 Owner 197121   0 Jan  7 00:41 ./
 git init my-repo 直接创建名为 my-repo 的仓库
 结果：Initialized empty Git repository in C:/Users/Owner/learn-git/.git/my-repo/.git/
 
+方式二：
+创建远程仓库
+git clone
+
+git clone 
+
+
 
 
 
