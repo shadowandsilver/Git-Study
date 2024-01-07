@@ -174,6 +174,28 @@ git diff HEAD~2 HEAD
 git diff HEAD`2 HEAD file3.txxt
 只比较两个版本中的file3文件的差异
 
+8. 版本库删除文件
+第一步：删除本地文件
+rm file1.txt
+
+第二步：删除暂存区内容
+git add file
+or
+git rm <file> 把文件从工作区和暂存区同时删除
+or
+git rm --cached<file> 把文件从暂存区删除，但保留在当前工作区中
+or
+git rm -r* 递归删除某个目录下的所有子目录和文件
+
+第三步：提交修改后的版本 (重点)
+
+9. gitignore文件
+系统或软件自动生成的文件
+编译产生搞得中间文件和结果文件
+运行时生成日志文件、缓存文件、临时文件
+设计身份、密码、口令、密钥等敏感信息文件
+
+
 
 
 
